@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5e87775eec.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="app-main">
+        <div class="searchInputBox">
+            <form action="#" id="searchForm">
+                <input type="text" id="input-box" class="input-box" placeholder="Enter city name..." autocomplete="off">
+            </form>
+        </div>
+        <div class="Weather-body">
+            <div class="location-details">
+                <div class="city" id="city">Delhi , IN</div>
+                <div class="date" id="date">20 August (Friday),2021</div>
+            </div>
+            <div class="Weather-satus">
+                <div class="temp" id="temp">34&deg;C</div>
+                <div class="min-max" id="min-max">32&deg;C(min) / 34&deg;C(max)</div>
+                <div class="weather" id="weather">Clear</div>
+                <div class="img"></div>
+                <div id="weatherWidget">
+                    <table class="table table-light " id="widgetTable">
+                        <thead>
+                            <tr>
+                                <th scope="col">Day</th>
+                                <th scope="col">Weather</th>
+                                <th scope="col">Minimum</th>
+                                <th scope="col">Maximum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
