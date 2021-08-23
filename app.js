@@ -83,6 +83,14 @@ fetch(`https://api.weatherbit.io/v2.0/forecast/daily?city=${cityName}&key=b4be10
     return apiResponse.json();
 }).then((apiData) => {
     let weatherArray = apiData.data;
+	if (widgetTable.rows.length > 1){
+
+		for (let index = 1; index < 8; index++) {
+			widgetTable.deleteRow(1); 
+		}
+	}
+
+    
     for (let index = 0; index < 7; index++) {
         let dayByDayData = weatherArray[index];
         var row = widgetTable.insertRow();
